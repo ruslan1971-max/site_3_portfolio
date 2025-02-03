@@ -42,12 +42,17 @@ img {
 }
 .header__link {
     display: inline-block;
-    font-size: 1.55rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
     margin-right: 3.12em;
     letter-spacing: 0.04em;
+    transition: all 1s ease;
+}
+
+.header__link:hover {
+    color: var(--darkblue);
 }
 /* intro style start */
 .intro {
@@ -92,7 +97,7 @@ img {
 }
 /* section about style */
 .about {
-    padding: 12.5em 0 10rem 0;
+    padding: 4.8rem 0 4.8rem 0;
 }
 .about__inner {
     width: 100%;
@@ -104,10 +109,108 @@ img {
     font-size: 3.2rem;
     font-weight: 500;
     color: #000000;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+
 }
 .about__text {
     font-size: 1.6rem;
     color: #727272;
     line-height: 164.1%;
+}
+/* project */
+.projects {
+    background-color: var(--darkblue);
+    padding: 10rem 0;
+}
+.projects__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects__item {
+    display: flex;
+    gap: 2rem;
+}
+.project__title {
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.project__text {
+    font-size: 1.6rem;
+    color: #ffffff;
+    line-height: 164.1%;
+}
+/* skils style start */
+.skils {
+    padding: 10.2rem 10.1rem;
+}
+.skils__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skils__title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+.skils__text {
+    font-size: 1.6rem;
+    line-height: 164.1%;
+    margin-bottom: 1.988rem;
+}
+.skils__light-grey {
+    width: 44.5rem;
+    height: 0.4rem;
+    background-color: #c4c4c4;
+    margin-bottom: 2.976rem;
+}
+.skils__dark-blue {
+    width: 35rem;
+    height: 0.4rem;
+    background-color: var(--darkblue);
+}
+.skils__image {
+    width: 100%;
+    max-width: 55.5rem;
+    height: auto;
+}
+/* video */
+.video {
+    padding: 10rem 0;
+    background-color: var(--grey);
+}
+.video__inner {
+    text-align: center;
+}
+.video__title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+.video__text {
+    width: 100%;
+    max-width: 54rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 164.1%;
+    color: #727272;
+    margin-bottom: 5.7rem;
+}
+.video__box {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+.video__image {
+    max-width: 1110px;
+}
+.video__play {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
