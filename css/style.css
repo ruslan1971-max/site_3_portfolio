@@ -214,3 +214,44 @@ img {
    left: 50%;
    transform: translate(-50%, -50%);
 }
+/* project */
+.project {
+    padding-top: 2.8rem;
+}
+.project__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project__items {
+    width: 100%;
+    max-width: 39.57rem;
+    height: 39.57rem;
+    position: relative;  
+}
+.project__image {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    /* transform: translate3d(-50%, -50%, 0); */
+}
+.project__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 84, 125, 0.8);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    z-index: 2;
+}
+.project__items:hover .project__content {
+    opacity: 1;
+}
+.project__link a {
+    text-decoration: none;
+}
