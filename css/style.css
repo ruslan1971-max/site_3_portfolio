@@ -30,7 +30,7 @@ img {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
-/* header style start */
+/* header style start ******************************************************************************/
 .header {
     padding-top: 6rem;
     background-color: var(--grey);
@@ -54,7 +54,7 @@ img {
 .header__link:hover {
     color: var(--darkblue);
 }
-/* intro style start */
+/* intro style start *********************************************************************************/
 .intro {
     width: 100%;
     max-width: 1920px;
@@ -87,7 +87,6 @@ img {
 .intro__btn {
     padding: 21px 40px;
     font-size: 1rem;
-    /* line-height: 164.1%; */
     letter-spacing: 0.13em;
     text-transform: uppercase;
     color: var(--white);
@@ -95,7 +94,7 @@ img {
     outline: var(--darkblue);
     border: 1px solid var(--darkblue);
 }
-/* section about style */
+/* section about style ***************************************************************************/
 .about {
     padding: 4.8rem 0 4.8rem 0;
 }
@@ -117,14 +116,14 @@ img {
     color: #727272;
     line-height: 164.1%;
 }
-/* project */
+/* project style start ***************************************************************************/
 .projects {
     background-color: var(--darkblue);
     padding: 10rem 0;
 }
 .projects__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .projects__item {
@@ -141,7 +140,7 @@ img {
     color: #ffffff;
     line-height: 164.1%;
 }
-/* skils style start */
+/* skils style start *******************************************************************************/
 .skils {
     padding: 10.2rem 10.1rem;
 }
@@ -177,7 +176,7 @@ img {
     max-width: 55.5rem;
     height: auto;
 }
-/* video */
+/* video style start ***************************************************************************/
 .video {
     padding: 10rem 0;
     background-color: var(--grey);
@@ -214,17 +213,17 @@ img {
    left: 50%;
    transform: translate(-50%, -50%);
 }
-/* project */
+/* project style start *************************************************************************/
 .project {
     padding-top: 2.8rem;
 }
 .project__inner {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .project__items {
-    width: 100%;
-    max-width: 39.57rem;
+    width: 25%;
     height: 39.57rem;
     position: relative;  
 }
@@ -233,7 +232,6 @@ img {
     left: 0%;
     right: 0%;
     z-index: 1;
-    /* transform: translate3d(-50%, -50%, 0); */
 }
 .project__content {
     display: flex;
@@ -243,6 +241,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 39.57rem;
     height: 100%;
     background-color: rgba(52, 84, 125, 0.8);
     opacity: 0;
@@ -254,4 +253,99 @@ img {
 }
 .project__link a {
     text-decoration: none;
+}
+/* section clients style start **************************************************************/
+.clients {
+    padding: 7.2rem 0 10rem;
+}
+.clients__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* section form style start ****************************************************************************/
+.form {
+    padding: 10rem 0;
+    background-color: #eeeff1;
+}
+.form__container {
+    width: 100%;
+    max-width: 54rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.form__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-top: -0.8rem;
+    margin-bottom: 5rem;
+}
+.form__text {
+    font-size: 1.6rem;
+    line-height: 164.1%;
+    color: #727272;
+    margin-bottom: 5.5rem;
+}
+.form__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.form__input,
+.form__textarea,
+.form__button {
+    border: none;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.form__input {
+    width: 100%;
+    max-width: 25.5rem;
+    padding: 1.7rem 0 1.8rem 2rem;
+}
+.form__textarea {
+  width: 100%;
+  max-width: 54rem;
+  height: 17.5rem;
+  resize: vertical;
+  padding: 1.7rem 0 0 2rem;
+  margin-bottom: 5rem;
+}
+.form__button {
+   padding: 1.7rem 4rem;
+   line-height: 164.1%;
+   letter-spacing: 15%;
+   background-color: var(--darkblue);
+   color: #ffffff;
+   text-transform: uppercase;
+}
+/* footer style start ***********************************************************************/
+.footer {
+    padding: 5rem 0;
+    background-color: var(--darkblue);
+    color: #ffffff;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__name {
+}
+.footer__title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.footer__reserved {
+    font-size: 1.3rem;
+    line-height: 164.1%;
+}
+.footer__social {
+    display: flex;
+    gap: 2.2rem;
+}
+.footer_social-icon {
+}
+.footer__image {
 }
